@@ -20,6 +20,8 @@ public class Main {
 //        SwitchCases.switchCases();
 //        ForLoops.forLoops();
 //        WhileLoops.whileLoops();
-        System.out.println(Methods.methods(3));
+//        System.out.println(Methods.methods(3));
+
+        new Objects().objects();
     }
 }
