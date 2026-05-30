@@ -1,9 +1,5 @@
 import cheatSheet.*;
 
-import java.awt.*;  // referenceTypes() example -> Point
-import java.util.Arrays;  // for arrays() and multiDimensionalArrays()
-import java.util.Scanner;  // for readUserInput()
-
 public class Main {
     public static void main(String[] args) {
 //        PrimitiveTypes.primitiveTypes();
