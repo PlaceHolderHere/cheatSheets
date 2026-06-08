@@ -72,15 +72,24 @@ public class GamePanel extends JPanel implements Runnable{
         // Key Presses
         if (keyH.upPressed){
             player.y -= player.speed;
+            player.currentState = "WALKING";
         }
-        if (keyH.downPressed){
+        else if (keyH.downPressed){
             player.y += player.speed;
+            player.currentState = "WALKING";
         }
-        if (keyH.leftPressed){
+        else if (keyH.leftPressed){
             player.x -= player.speed;
+            player.currentState = "WALKING";
+            player.direction = "LEFT";
         }
-        if (keyH.rightPressed){
+        else if (keyH.rightPressed){
             player.x += player.speed;
+            player.currentState = "WALKING";
+            player.direction = "RIGHT";
+        }
+        else{
+            player.currentState = "IDLE";
         }
     }
 
