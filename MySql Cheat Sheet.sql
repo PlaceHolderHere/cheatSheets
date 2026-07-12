@@ -11,7 +11,7 @@ USE students;
 
 -- Creates a Table in selected database
 /* CREATE TABLE employees(
-	employee_id INT,
+	employee_id INT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
     hourly_pay DECIMAL(10, 2),
@@ -21,8 +21,11 @@ USE students;
 */
 -- ----------------------------------
 
-/*ALTER TABLE employees ADD COLUMN hire_date DATE;*/
-/*ALTER TABLE employees MODIFY email VARCHAR(100) AFTER hourly_pay;*/
+-- Changing/Altering a Table
+/* RENAME TABLE employees TO students; */ -- Rename a table
+/*ALTER TABLE employees ADD COLUMN hire_date DATE;*/ -- Add a column
+/* ALTER TABLE employees MODIFY email VARCHAR(200); */
+/*ALTER TABLE employees MODIFY email VARCHAR(100) AFTER hourly_pay;*/ -- Move a Column
 /*ALTER TABLE employees DROP COLUMN hire_date;*/
 -- ----------------------------------
 
@@ -104,4 +107,3 @@ USE students;
 );*/
 
 -- INSERT INTO students (student_id, first_name, last_name, grade_level, email, logged_in) VALUES ('4000', 'Crisostomo', 'Ibarra', 12, 'crisostomoibarra@gmail.com',True);
-SELECT * FROM students WHERE student_id = 1295;
