@@ -11,6 +11,7 @@
 2. app.get(url, function) -> creates a route, and returns req and res
     2.1. req object -> what the user is requesting
     2.2. res object -> what the server is responding
+        2.2.1. res.json() -> sends json as a response
 
 -- TERMS --
 1. Route -> instruction/what happens after a user visits a certain URL
