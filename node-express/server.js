@@ -1,5 +1,19 @@
+const cors = require('cors')
 const express = require('express'); // Loading express module
 const app = express(); // create the app
+
+// Whitelisting/Allow certain domains to access the server
+// Note: Adding "Null" allows ALL domains to access the server
+const allowedOrigins = ["http://localhost:3000"]
+app.use(cors({
+    origin: allowedOrigins
+}))
+
+// Connecting to a frontend
+// This route returns a json object to the frontend, you can connect a backend/database here
+app.get("/basic-frontend", (req, res) => {
+    res.json({message: "Hello World"})
+})
 
 // Get Route '/' represents the url
 // returns 2 objects: req & res

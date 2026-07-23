@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-Test</title>
+</head>
+<body>
+    <h1>Hello, this is an example of connecting to a front end</h1>
+    <button id="req_btn">Get Message from Server</button>
+    <h2 id="response">Server Response:</h2>
+    <script>
+        const btn = document.getElementById('req_btn');
+        const response = document.getElementById('response');
+
+        btn.addEventListener('click', async () => {
+            fetch('http://localhost:3000/basic-frontend')
+            
+            // Fetch returns a "response" object (or a promise) that is then processed below
+            .then(response =>{
+                if (!response.ok){
+                    throw new Error(`Server Error: ${response.status} ${response.statusText}`)
+                }
+
+                return response.json() // returns "data" object
+            })
+
+            .then(data => {
+                response.textContent = data.message
+            })
+            .catch(err =>{
+                console.error(err)
+            })
+        });
+    </script>
+</body>
+</html>
