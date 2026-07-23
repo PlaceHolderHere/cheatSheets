@@ -15,3 +15,4 @@
 
 -- TERMS --
 1. Route -> instruction/what happens after a user visits a certain URL
+2. Route Parameters -> dynamic values/variables in a URL that can be processed by the server

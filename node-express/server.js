@@ -17,6 +17,12 @@ app.get("/json", (req, res) =>{
     ])
 });
 
+// Route Parameters
+app.get("/params/:message", (req, res) =>{
+    const msg = req.params.message // should match the name in the url (ex: message)
+    res.send(msg)
+});
+
 // Tells express to listen to port:3000 and log a message
 app.listen(3000, () => {
     console.log("Server is Running");
