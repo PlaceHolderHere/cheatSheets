@@ -20,3 +20,5 @@
 3. Connecting to a front-end
     - You can create routes for the front-end to send requests to the server (e.g. for data)
     - You must use the CORS module and input a list of allowed origins for a front-end to interact with a back-end
+4. POST Routes
+    - These routes allow users to send data to the server

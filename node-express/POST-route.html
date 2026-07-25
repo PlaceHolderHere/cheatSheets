@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST Route</title>
+</head>
+<body>
+    <form id="form">
+        <input id="name" placeholder="Name" />
+        <input id="email" placeholder="Email" />
+        <button>Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById("form")
+        const nameInput = document.getElementById("name")
+        const emailInput = document.getElementById("email")
+
+        form.addEventListener("submit", (e) =>{
+            e.preventDefault() // stops page from refreshing by default
+            
+            const name = nameInput.value
+            const email = emailInput.value
+            
+            fetch('http://localhost:3000/post-route', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({name, email})
+            })
+            .then(response => response.json())
+            .then(data =>{
+                console.log(data)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+        })
+    </script>
+</body>
+</html>

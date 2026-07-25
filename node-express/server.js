@@ -9,6 +9,18 @@ app.use(cors({
     origin: allowedOrigins
 }))
 
+// POST Routes
+// Tells express to put the json data from the front-end in req.body
+app.use(express.json())
+
+app.post('/post-route', (req, res) => {
+    const name = req.body.name
+    const email = req.body.email
+
+    console.log(name, email)
+    res.json({message: "Thank you for logging in:>"})
+})
+
 // Connecting to a frontend
 // This route returns a json object to the frontend, you can connect a backend/database here
 app.get("/basic-frontend", (req, res) => {
