@@ -1,9 +1,10 @@
 const cors = require('cors')
 const express = require('express'); // Loading express module
+const expressRouter = require('./express-routing') // use express routing
 const app = express(); // create the app
 
 // Whitelisting/Allow certain domains to access the server
-// Note: Adding "Null" allows ALL domains to access the server
+// Note: Adding "null" allows ALL domains to access the server
 const allowedOrigins = ["http://localhost:3000"]
 app.use(cors({
     origin: allowedOrigins
@@ -30,7 +31,7 @@ app.get("/basic-frontend", (req, res) => {
 // Get Route '/' represents the url
 // returns 2 objects: req & res
 app.get("/", (req, res) =>{
-    res.send("Hello, the server is wokring");
+    res.send("Hello, the server is working");
 })
 
 // JSON
@@ -48,6 +49,10 @@ app.get("/params/:message", (req, res) =>{
     const msg = req.params.message // should match the name in the url (ex: message)
     res.send(msg)
 });
+
+// Express Router
+// ExpressRouter can be accessed through localhost:3000/express-router
+app.use('/express-router', expressRouter)
 
 // Tells express to listen to port:3000 and log a message
 app.listen(3000, () => {

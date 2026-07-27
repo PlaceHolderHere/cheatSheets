@@ -22,3 +22,5 @@
     - You must use the CORS module and input a list of allowed origins for a front-end to interact with a back-end
 4. POST Routes
     - These routes allow users to send data to the server
+5. Express Routing
+    - allow you to split routes into separate files and/or directories
