@@ -10,6 +10,12 @@ app.use(cors({
     origin: allowedOrigins
 }))
 
+// Middleware
+app.use((req, res, next) => {
+    console.log("Middleware is running")
+    next() // allows the request to continue to the next middleware or route handler
+})
+
 // POST Routes
 // Tells express to put the json data from the front-end in req.body
 app.use(express.json())

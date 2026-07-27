@@ -24,3 +24,7 @@
     - These routes allow users to send data to the server
 5. Express Routing
     - allow you to split routes into separate files and/or directories
+6. Middleware
+    - allows you to execute a function when a request is sent, but before a response is returned
+    6.1. Middleware can receive a req and edit it
+    6.2. Middleware can finish the response, or send it to another route with next()
