@@ -17,14 +17,19 @@
 -- NOTES --
 1. Route -> instruction/what happens after a user visits a certain URL
 2. Route Parameters -> dynamic values/variables in a URL that can be processed by the server
-3. Connecting to a front-end
+3. Query Parameters
+    - Similar to Route Parameters, but formatted as key-value pairs
+    - url/route?key1=value1&key2=value2
+    - the data is accessible through req.query
+
+4. Connecting to a front-end
     - You can create routes for the front-end to send requests to the server (e.g. for data)
     - You must use the CORS module and input a list of allowed origins for a front-end to interact with a back-end
-4. POST Routes
+5. POST Routes
     - These routes allow users to send data to the server
-5. Express Routing
+6. Express Routing
     - allow you to split routes into separate files and/or directories
-6. Middleware
+7. Middleware
     - allows you to execute a function when a request is sent, but before a response is returned
     6.1. Middleware can receive a req and edit it
     6.2. Middleware can finish the response, or send it to another route with next()

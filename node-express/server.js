@@ -56,6 +56,14 @@ app.get("/params/:message", (req, res) =>{
     res.send(msg)
 });
 
+// Query Parameters
+// formated like url/route?key1=value1&key2=value2
+app.get("/query-params", (req, res) => {
+    // Req.query returns an object containing all the query parameters in the url
+    const name = req.query.name
+    res.send(`Hello ${name}, you have sent a query parameter`)
+})
+
 // Express Router
 // ExpressRouter can be accessed through localhost:3000/express-router
 app.use('/express-router', expressRouter)
