@@ -15,3 +15,14 @@ CREATE TABLE businesses(
     num_of_employees INT
 );
 
+CREATE TABLE employees(
+	employee_id INT PRIMARY KEY,
+    name VARCHAR(200),
+    hourly_pay FLOAT,
+    age INT,
+    hire_date DATE,
+    business_id INT,
+    
+    -- CONSTRAINT [constraint name] FOREIGN KEY ([col_name in current table]) REFERENCES [table]([column])
+    CONSTRAINT fk_business_id FOREIGN KEY (business_id) REFERENCES businesses(id)
+);
