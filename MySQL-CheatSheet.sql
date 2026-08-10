@@ -6,6 +6,10 @@
 -- USE [db_name]
 USE employees;
 
+-- Getting Info about a database and tables
+-- SHOW TABLES; -- List all tables in the currently active database
+-- DESCRIBE employees; -- lists all attributes in employees table
+
 -- Creating a Table
 -- CREATE TABLE [table_name] ([attribute name] [datatype],...);
 CREATE TABLE businesses(
