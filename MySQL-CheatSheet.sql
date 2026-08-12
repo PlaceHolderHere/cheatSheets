@@ -67,3 +67,21 @@ INSERT INTO employees (employee_id, business_id, full_name, hourly_pay, hire_dat
 		(4, 3, 'Person4', 13.75, '2020-04-22', '4@email.com'),
 		(5, 1, 'Person5', 8.75, '2020-04-22', '5@email.com'),
         (6, 4, 'Person6', 15.75, '2020-04-22', '6@email.com'); 
+        
+-- SELECT data from tables--
+-- SELECT [columns] FROM [table];
+SELECT * FROM employees; -- selects all columns
+SELECT employee_id, full_name FROM employees; -- selects only full_name and employee_id column
+
+-- WHERE --
+-- Filters data from a SELECT query based on conditions (logical operators like: =, <>, >=, etc)
+-- SELECT [cols] FROM [table] WHERE [condition];
+SELECT * FROM employees WHERE employee_id = 2;
+
+-- AND -- (returns a row only if both conditions are true)
+SELECT * FROM employees
+	WHERE employee_id > 2 AND hourly_pay > 13;
+    
+-- OR -- (returns a row if either condition is true)
+SELECT * FROM employees
+	WHERE business_id = 3 OR hourly_pay > 15;
