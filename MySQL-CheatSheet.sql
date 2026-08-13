@@ -85,3 +85,10 @@ SELECT * FROM employees
 -- OR -- (returns a row if either condition is true)
 SELECT * FROM employees
 	WHERE business_id = 3 OR hourly_pay > 15;
+    
+-- ORDER BY -- 
+-- Orders records based on a column
+SELECT * FROM employees ORDER BY hourly_pay;
+
+-- DESC - Descending order
+SELECT * FROM employees ORDER BY hourly_pay DESC;
