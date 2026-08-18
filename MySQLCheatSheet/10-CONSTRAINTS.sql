@@ -14,3 +14,9 @@ ALTER TABLE employees
 	ADD CONSTRAINT unique_email
     UNIQUE (email);
 -- --------------------------------------------------------------------------------------------------------------------------
+
+-- === NOT NULL === --
+-- a column cannot be NULL, a value must be provided
+ALTER TABLE employees
+	MODIFY email varchar(200) NOT NULL;
+-- --------------------------------------------------------------------------------------------------------------------------
