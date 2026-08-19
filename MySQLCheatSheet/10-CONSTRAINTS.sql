@@ -2,7 +2,6 @@
 -- Selects a database to use
 USE employees;
 -- --------------------------------------------------------------------------------------------------------------------------
-
 -- === CONSTRAINTS === --
 -- constraints for the values of a certain column which you can add upon table creation, or after table creation (with alter)
 -- Syntax: ALTER TABLE [table] ADD CONSTRAINT [constraint name] [Constraint] ([column/s]);
@@ -20,3 +19,9 @@ ALTER TABLE employees
 ALTER TABLE employees
 	MODIFY email varchar(200) NOT NULL;
 -- --------------------------------------------------------------------------------------------------------------------------
+
+-- === CHECK === --
+-- Values in this column must meet a certain condition
+ALTER TABLE employees
+	ADD CONSTRAINT minimum_wage
+    CHECK (hourly_pay >= 8.5);
