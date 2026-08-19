@@ -6,6 +6,9 @@ USE employees;
 -- constraints for the values of a certain column which you can add upon table creation, or after table creation (with alter)
 -- Syntax: ALTER TABLE [table] ADD CONSTRAINT [constraint name] [Constraint] ([column/s]);
 
+-- LIST ALL AVAILABLE CONSTRAINTS:
+SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE TABLE_NAME = 'employees'; -- replace employees with any table name
+
 -- === UNIQUE === --
 -- a column cannot have 2 rows with the same value
 -- example of adding the constraint to an existing table via alter:
@@ -25,3 +28,4 @@ ALTER TABLE employees
 ALTER TABLE employees
 	ADD CONSTRAINT minimum_wage
     CHECK (hourly_pay >= 8.5);
+-- --------------------------------------------------------------------------------------------------------------------------
