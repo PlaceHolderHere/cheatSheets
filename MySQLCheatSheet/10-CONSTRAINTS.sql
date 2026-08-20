@@ -59,3 +59,10 @@ ALTER TABLE employees
     FOREIGN KEY (business_id)
     REFERENCES businesses(id);
 -- --------------------------------------------------------------------------------------------------------------------------
+
+-- === DEFAULT === --
+-- If a value is not given for a column when inserting a row, use this default value
+ALTER TABLE businesses
+	ALTER num_of_employees
+    SET DEFAULT 0;
+-- --------------------------------------------------------------------------------------------------------------------------
