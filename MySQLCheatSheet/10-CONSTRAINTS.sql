@@ -66,3 +66,15 @@ ALTER TABLE businesses
 	ALTER num_of_employees
     SET DEFAULT 0;
 -- --------------------------------------------------------------------------------------------------------------------------
+
+-- === AUTO_INCREMENT === --
+-- generates a default value, starting at 1 and incrementing for every new record added
+-- typically used for PRIMARY KEY
+-- Setting a column to auto increment:
+ALTER TABLE employees
+	MODIFY employee_id
+    INT AUTO_INCREMENT;
+    
+-- SETTING STARTING VALUE OF AUTO INCREMENT --
+ALTER TABLE employees AUTO_INCREMENT = 7;
+-- --------------------------------------------------------------------------------------------------------------------------
