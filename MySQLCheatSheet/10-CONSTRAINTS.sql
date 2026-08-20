@@ -6,6 +6,13 @@ USE employees;
 -- === CONSTRAINTS === --
 -- constraints for the values of a certain column which you can add upon table creation, or after table creation (with alter)
 -- Syntax: ALTER TABLE [table] ADD CONSTRAINT [constraint name] [Constraint] ([column/s]);
+-- Example of adding a constraint when creating a table: CONSTRAINT [constraint name] [constraint] ([column/s])
+CREATE TABLE test(
+	test_id INT,
+    test_attribute int,
+    
+    CONSTRAINT primary_key PRIMARY KEY (test_id)
+);
 
 -- LIST ALL AVAILABLE CONSTRAINTS:
 SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE TABLE_NAME = 'employees'; -- replace employees with any table name
@@ -35,4 +42,11 @@ ALTER TABLE employees
 ALTER TABLE employees
 	ADD CONSTRAINT minimum_wage
     CHECK (hourly_pay >= 8.5);
+-- --------------------------------------------------------------------------------------------------------------------------
+
+-- === PRIMARY KEY === --
+-- Combines UNIQUE and NOT NULL for a unique identifier for each row of a table
+ALTER TABLE employees
+	ADD CONSTRAINT primary_key
+    PRIMARY KEY (employee_id);
 -- --------------------------------------------------------------------------------------------------------------------------
