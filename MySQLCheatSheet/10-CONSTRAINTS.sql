@@ -50,3 +50,12 @@ ALTER TABLE employees
 	ADD CONSTRAINT primary_key
     PRIMARY KEY (employee_id);
 -- --------------------------------------------------------------------------------------------------------------------------
+
+-- === FOREIGN KEY === --
+-- You can store the primary key of another table for reference
+-- Used in combination with JOINS
+ALTER TABLE employees
+	ADD CONSTRAINT foreign_key
+    FOREIGN KEY (business_id)
+    REFERENCES businesses(id);
+-- --------------------------------------------------------------------------------------------------------------------------
