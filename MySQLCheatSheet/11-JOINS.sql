@@ -9,7 +9,7 @@ USE employees;
 -- --------------------------------------------------------------------------------------------------------------------------
 
 -- Inserting some data as an example:
-INSERT INTO employees (full_name, email) VALUES ('Person7', '7@email.com'), ('Person8', '8@email.com');
+INSERT INTO employees (full_name, email) VALUES ('Emma', '7@email.com'), ('Oliver', '8@email.com');
 
 -- === INNER JOIN === --
 -- Inner Joins only returns rows that have matching in the shared_column in both tables
