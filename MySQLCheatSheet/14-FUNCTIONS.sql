@@ -23,4 +23,15 @@ SELECT MAX(hourly_pay) FROM employees;
 SELECT MIN(hourly_pay) FROM employees;
 -- ---------------------------------------------------------
 
+-- AVG --
+-- Returns the average of all values in a column
+SELECT AVG(hourly_pay) FROM employees;
+-- ---------------------------------------------------------
+
+-- SUM --
+-- Returns the sum of all values in a column
+SELECT SUM(hourly_pay) FROM employees;
+-- ---------------------------------------------------------
+
+
 -- --------------------------------------------------------------------------------------------------------------------------
