@@ -33,5 +33,12 @@ SELECT AVG(hourly_pay) FROM employees;
 SELECT SUM(hourly_pay) FROM employees;
 -- ---------------------------------------------------------
 
+-- CONCAT --
+-- Allows you to combine multiple strings into one
+-- Note: if you input non strings (like ints) MYSQL will automatically convert it to a string
+-- Syntax: CONCAT([col/string], [string]...[string])
+SELECT CONCAT(employee_id, " ", full_name) FROM employees;
+-- ---------------------------------------------------------
+
 
 -- --------------------------------------------------------------------------------------------------------------------------
