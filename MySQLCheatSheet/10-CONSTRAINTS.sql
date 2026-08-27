@@ -1,4 +1,4 @@
--- --- USE --- -- 
+-- === USE === -- 
 -- Selects a database to use
 USE employees;
 -- --------------------------------------------------------------------------------------------------------------------------
@@ -77,4 +77,11 @@ ALTER TABLE employees
     
 -- SETTING STARTING VALUE OF AUTO INCREMENT --
 ALTER TABLE employees AUTO_INCREMENT = 7;
+
+-- SEE THE CURRENT VALUE OF AUTO INCREMENT --
+-- Syntax: SELECT AUTO_INCREMENT FROM information_schema.tables WHERE table_schema = [db_name] AND table_name = [table_name];
+SELECT AUTO_INCREMENT 
+FROM information_schema.tables 
+WHERE table_schema = 'employees' 
+  AND table_name = 'employees';
 -- --------------------------------------------------------------------------------------------------------------------------
