@@ -3,9 +3,9 @@
 USE employees;
 -- --------------------------------------------------------------------------------------------------------------------------
 
--- === FUNCTIONS === -- 
--- Allows you to pass in parameters or "inputs" and receive a value in return
--- Parameters refer to column/s, based on your query (so it can be affected by things like WHERE)
+-- === AGGREGATE FUNCTIONS === -- 
+-- Aggregate Functions are similar to normal functions, but they take all of the rows within your query and output a single values
+-- Ex: SUM would add together all of the values of each row within a column
 -- ---------------------------------------------------------
 
 -- COUNT --
