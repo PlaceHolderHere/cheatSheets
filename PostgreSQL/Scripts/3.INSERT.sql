@@ -5,10 +5,10 @@
 	-- INSERT INTO [table_name] ([col1], [col2],...,[col3]) VALUES ([val1], [val2],...,[val3]), ([val1]...);
 
 -- Inserting one row
-INSERT INTO students (id, first_name, last_name, birthday) VALUES 
-	(1, 'Jack', 'Brown', DATE '2008-09-09');
+INSERT INTO students (first_name, last_name, grade_level, birthday) VALUES 
+	('Jack', 'Brown', 12, DATE '2008-09-09');
 
 -- Inserting multiple rows at once
-INSERT INTO students (id, first_name, last_name, birthday) VALUES 
-	(2, 'Zach', 'Black', DATE '2008-12-30'),
-	(3, 'Jeff', 'James', DATE '2009-02-24');
+INSERT INTO students (first_name, last_name, grade_level, birthday) VALUES 
+	('Zach', 'Black', 11, DATE '2008-12-30'),
+	('Jeff', 'James', 11, DATE '2009-02-24');
