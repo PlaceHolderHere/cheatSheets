@@ -13,3 +13,4 @@ General psql commands:
     * CREATE TABLE (columns...);
     * \d -> list tables
     * \d [table_name] -> describe table
+    * \i [sql_file_path] -> psql command to run a .sql file
