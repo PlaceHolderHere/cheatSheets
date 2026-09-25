@@ -21,3 +21,6 @@ SELECT MAX(gpa) FROM students;
 -- finds the lowest value among all the rows
 SELECT MIN(gpa) FROM students;
 
+-- SUM --
+-- returns the sum of the values of a certain column in each row
+SELECT SUM(gpa) FROM students;
