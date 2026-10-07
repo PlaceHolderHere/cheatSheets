@@ -8,4 +8,3 @@ DELETE FROM students WHERE student_id = 22;
 
 -- Deleting Everything in a table --
 DELETE FROM students;
-SELECT * FROM students;
