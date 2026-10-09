@@ -16,3 +16,26 @@ CREATE TABLE students(
 	grade_level SMALLINT,
 	birthday DATE
 );
+-- ---------------------------------------------------------------------------------
+
+-- CREATING A TABLE WITH A FOREIGN KEY --
+-- Option 1: column level syntax, one-line 
+CREATE TABLE student_grades(
+	id SERIAL PRIMARY KEY,
+	subject VARCHAR(20) NOT NULL,
+	grade DECIMAL(5, 2),
+	student_id INT REFERENCES students(student_id) ON DELETE CASCADE
+);
+
+-- Option 2: Separate Constraint
+CREATE TABLE student_grades(
+    id SERIAL PRIMARY KEY,
+    subject VARCHAR(20) NOT NULL,
+    grade DECIMAL(5, 2),
+    student_id INT,
+    CONSTRAINT fk_students 
+        FOREIGN KEY (student_id) 
+        REFERENCES students(student_id) 
+        ON DELETE CASCADE
+);
+-- ---------------------------------------------------------------------------------
