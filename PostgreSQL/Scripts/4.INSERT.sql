@@ -25,3 +25,21 @@ INSERT INTO students (first_name, last_name, grade_level, birthday, gpa) VALUES
   ('Emma', 'Johnson', 11, '2008-09-22', 3.65),
   ('Aiden', 'Brooks', 10, '2009-05-17', 2.70),
   ('Zoe', 'Nguyen', 9, '2010-02-08', 3.50);
+
+-- Sample Data for Table 2 -- 
+INSERT INTO student_grades (subject, grade, student_id) VALUES
+	('Math', 88.50, 18),
+	('Science', 92.00, 19),
+	('English', 85.75, 20),
+	('History', 79.50, 21),
+	('Physics', 91.25, 23),
+	('Chemistry', 84.00, 24),
+	('Computer Sci', 95.50, 25),
+	('Math', 82.00, 26),
+	('English', 88.00, 27),
+	('Science', 90.25, 28),
+	('History', 76.50, 29),
+	('Physics', 89.00, 30),
+	('Computer Sci', 94.00, 18),
+	('Math', 89.50, 23),
+	('English', 91.00, 25);
