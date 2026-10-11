@@ -16,6 +16,7 @@ public class Main {
 //        SwitchCases.switchCases();
 //        ForLoops.forLoops();
 //        WhileLoops.whileLoops();
+            // WhileLoops.doWhileLoops();
 //        System.out.println(Methods.methods(3));
 
         new Objects().objects();

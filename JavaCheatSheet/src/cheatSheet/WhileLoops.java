@@ -10,4 +10,14 @@ public class WhileLoops {
             num++;
         }
     }
+
+    public static void doWhileLoops(){
+        // Do while loops will run the code in the {} at least once, then check the condition
+        // This can run for as long as needed
+        int num = 0;
+        do {
+            System.out.println(num);
+            num++;
+        } while (num < 5);
+    }
 }
