@@ -20,3 +20,12 @@ function square(num){
 
 let squared = square(3)
 console.log(squared)
+
+// --- ARROW FUNCTIONS --- //
+// uses the arrow symbol "=>" to create functions in a shorter, more concise way
+// the function here is stored in the "add" constant
+const add = (x, y) => {
+    console.log(x + y)
+}
+
+add(5, 10) // Calling the arrow function
