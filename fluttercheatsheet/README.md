@@ -13,3 +13,8 @@ A new addition to the cheatsheet collection for flutter basics. Important comman
     4.1. flutter run -d [device] - runs flutter with a specific device
 5. flutter emulators - lists available device emulators
     5.1. flutter emulators --launch [emulator_id] - runs the flutter app on the emulator
+
+# Notes
+1. runApp() - starts the app
+2. MaterialApp() - sample name for your app, can be named anything
+3. Scaffold() - The scaffold class implements a basic visual layout structure foor materia components
