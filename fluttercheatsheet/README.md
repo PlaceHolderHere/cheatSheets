@@ -11,3 +11,5 @@ A new addition to the cheatsheet collection for flutter basics. Important comman
 3. flutter devices - list available device to run the flutter app on
 4. flutter run - starts up the app and prompts you to choose a device 
     4.1. flutter run -d [device] - runs flutter with a specific device
+5. flutter emulators - lists available device emulators
+    5.1. flutter emulators --launch [emulator_id] - runs the flutter app on the emulator
