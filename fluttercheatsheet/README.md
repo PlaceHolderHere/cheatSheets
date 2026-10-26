@@ -3,7 +3,7 @@
 A new addition to the cheatsheet collection for flutter basics. Important commands/notes will be listed in this readme as well as resources I use such as youtube videos and/or documentation.
 
 # Resources
-* Youtube: 
+* Youtube, by John Elder: https://www.youtube.com/watch?v=VFDbZk2xhO4&list=PLCC34OHNcOtpx9qCZNv-NbIT1Gx3BAOku
 
 # Terminal Commands
 1. flutter create [app_name]
