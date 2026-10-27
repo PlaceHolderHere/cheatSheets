@@ -4,6 +4,7 @@ A new addition to the cheatsheet collection for flutter basics. Important comman
 
 # Resources
 * Youtube, by John Elder: https://www.youtube.com/watch?v=VFDbZk2xhO4&list=PLCC34OHNcOtpx9qCZNv-NbIT1Gx3BAOku
+* Built in Material IO Colors: https://m1.material.io/style/color.html
 
 # Terminal Commands
 1. flutter create [app_name]
