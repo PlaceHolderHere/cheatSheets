@@ -19,3 +19,9 @@ A new addition to the cheatsheet collection for flutter basics. Important comman
 1. runApp() - starts the app
 2. MaterialApp() - sample name for your app, can be named anything
 3. Scaffold() - The scaffold class implements a basic visual layout structure foor materia components
+4. Adding local images
+    - To add local images:
+    4.1. Add it to the local directory (in this case I have it in an images folder)
+    4.2. Go to pubspec.yaml > assets
+    4.3. Uncomment assets, and list the relative path to your image (indentation is important)
+    4.4. use the AssetImage() attribute of the Image() class

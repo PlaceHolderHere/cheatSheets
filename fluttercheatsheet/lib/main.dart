@@ -18,6 +18,8 @@ void main() {
           child: Column(
             children:[
               Text("This is the body"),
+
+              // === COLORS === //
               ElevatedButton(
                   style: const ButtonStyle(
                     backgroundColor: WidgetStatePropertyAll<Color>(Colors.green), // Built in Colors for Buttons
@@ -31,6 +33,11 @@ void main() {
                   ),
                   child: const Text("Custom Color"),
                   onPressed: (){}
+              ),
+
+              // === IMAGES === //
+              Image(
+                image: AssetImage('images/dog.jpg'), // Image from assets
               )
             ]
           )
