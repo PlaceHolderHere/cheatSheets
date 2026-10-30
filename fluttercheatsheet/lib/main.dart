@@ -36,6 +36,10 @@ void main() {
               ),
 
               // === IMAGES === //
+              // Network Image - Images you can load from the internet, to your app
+              Image.network("https://picsum.photos/250?image=9"),
+
+              // Local Image
               Image(
                 image: AssetImage('images/dog.jpg'), // Image from assets
               )
