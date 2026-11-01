@@ -18,5 +18,8 @@ public class ReadUserInput {
         System.out.print("Name: ");
         String name = scanner.nextLine();
         System.out.println("Hello " + name);
+
+        // Closing the scanner object once you are done using it
+        scanner.close();
     }
 }
