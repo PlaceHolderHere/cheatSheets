@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  // Format: Color(0x[Alpha][HexCode])
-  const customColorOrange = Color(0xFFFF5733); // Example of a custom color
+  runApp(const MyApp());
+}
 
-  runApp( // Starts the app
-    MaterialApp( // App named MaterialApp
+class MyApp extends StatelessWidget{
+  const MyApp({super.key});
+
+  // Format: Color(0x[Alpha][HexCode])
+  static const customColorOrange = Color(0xFFFF5733); // Example of a custom color
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false, // Removes the debug banner
       
       // Widgets are stored here in the "Widget Tree"
@@ -49,6 +56,6 @@ void main() {
           )
         ),
       )
-    )
-  );
+    );
+  }
 }
