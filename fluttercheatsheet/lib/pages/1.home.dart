@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '2.colors.dart';
 import '3.images.dart';
 import '4.layout/4.1.container.dart';
+import '4.layout/4.2.column.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -52,6 +53,18 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 4.1.Container'),
+            ),
+
+            // === 4.2. Column === //
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to Page Four
+                Navigator.push(   
+                  context,
+                  MaterialPageRoute(builder: (context) => const ColumnPage()),
+                );
+              },
+              child: const Text('Go to 4.2.Column'),
             ),
           ],
         ),
