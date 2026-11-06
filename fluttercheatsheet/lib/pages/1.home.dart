@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '2.colors.dart';
 import '3.images.dart';
+import '4.layout/4.1.container.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,6 +18,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            // === 2. Colors === //
             ElevatedButton(
               onPressed: () {
                 // Navigate to Page One
@@ -27,6 +29,8 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Go to 2.Colors'),
             ),
+
+            // === 3. Images === //
             ElevatedButton(
               onPressed: () {
                 // Navigate to Page Two
@@ -36,6 +40,18 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 3.Images'),
+            ),
+
+            // === 4.1. Container === //
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to Page Three
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ContainerPage()),
+                );
+              },
+              child: const Text('Go to 4.1.Container'),
             ),
           ],
         ),
