@@ -3,6 +3,7 @@ import '2.colors.dart';
 import '3.images.dart';
 import '4.layout/4.1.container.dart';
 import '4.layout/4.2.column.dart';
+import '4.layout/4.3.row.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -22,7 +23,6 @@ class HomePage extends StatelessWidget {
             // === 2. Colors === //
             ElevatedButton(
               onPressed: () {
-                // Navigate to Page One
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const ColorsPage()),
@@ -34,7 +34,6 @@ class HomePage extends StatelessWidget {
             // === 3. Images === //
             ElevatedButton(
               onPressed: () {
-                // Navigate to Page Two
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const ImagesPage()),
@@ -46,7 +45,6 @@ class HomePage extends StatelessWidget {
             // === 4.1. Container === //
             ElevatedButton(
               onPressed: () {
-                // Navigate to Page Three
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const ContainerPage()),
@@ -58,13 +56,23 @@ class HomePage extends StatelessWidget {
             // === 4.2. Column === //
             ElevatedButton(
               onPressed: () {
-                // Navigate to Page Four
                 Navigator.push(   
                   context,
                   MaterialPageRoute(builder: (context) => const ColumnPage()),
                 );
               },
               child: const Text('Go to 4.2.Column'),
+            ),
+
+            // === 4.3. Row === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(   
+                  context,
+                  MaterialPageRoute(builder: (context) => const RowPage()),
+                );
+              },
+              child: const Text('Go to 4.3.Row'),
             ),
           ],
         ),
