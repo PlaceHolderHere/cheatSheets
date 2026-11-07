@@ -5,6 +5,7 @@ import '4.layout/4.1.container.dart';
 import '4.layout/4.2.column.dart';
 import '4.layout/4.3.row.dart';
 import '4.layout/4.4.center.dart';
+import '4.layout/4.5.stack.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -85,6 +86,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 4.4.Center'),
+            ),
+
+            // === 4.5. Stack === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const StackPage()),
+                );
+              },
+              child: const Text('Go to 4.5.Stack'),
             ),
           ],
         ),
