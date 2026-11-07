@@ -27,49 +27,45 @@ class ColumnPage extends StatelessWidget{
                 child: const Text('Back to Home'),
               ),
               
-              // === Column === //
-              // Allows you to stack/arrange components in a vertical order
-              // By Default, takes up as little space as possible
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center, // Aligns vertically within the column
-                crossAxisAlignment: CrossAxisAlignment.center, // Aligns horizontally column
-                children: [
-                  Container(
-                    width: 100, // double.infinity = full parent width
-                    height: 100, // double.infinity = full parent height
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.all(25),
-                    decoration: BoxDecoration( // Styling
-                      borderRadius: BorderRadius.circular(25), // Rounded corners
-                      color: Colors.red,
-                    ),
-                    child: const Text("Container 1"),
-                  ),
-                  
-                  Container(
-                    width: 100, // double.infinity = full parent width
-                    height: 100, // double.infinity = full parent height
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.all(5),
-                    decoration: BoxDecoration( // Styling
-                      borderRadius: BorderRadius.circular(25), // Rounded corners
-                      color: Colors.red,
-                    ),
-                    child: const Text("Container 2"),
-                  ),
-
-                  Container(
-                    width: 100, // double.infinity = full parent width
-                    height: 100, // double.infinity = full parent height
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.all(5),
-                    decoration: BoxDecoration( // Styling
-                      borderRadius: BorderRadius.circular(25), // Rounded corners
-                      color: Colors.red,
-                    ),
-                    child: const Text("Container 3"),
-                  ),
-                ],
+              Container(
+                height: 500,
+                color: Colors.blue,
+                
+                // === Column === //
+                // Allows you to stack/arrange components in a vertical order
+                // By Default, takes up as little space as possible
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center, // Aligns vertically within the column
+                  crossAxisAlignment: CrossAxisAlignment.center, // Aligns horizontally column
+                  children: [
+                    Container(
+                        width: 100, 
+                        height: 100,
+                        color: Colors.orange,
+                        margin: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(5),
+                        child: const Text("Container 1"),
+                      ),
+                
+                      Container(
+                        width: 100, 
+                        height: 100,
+                        color: Colors.orange,
+                        margin: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(5),
+                        child: const Text("Container 2"),
+                      ),
+                
+                      Container(
+                        width: 100, 
+                        height: 100,
+                        color: Colors.orange,
+                        margin: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(5),
+                        child: const Text("Container 3"),
+                      ),
+                  ],
+                ),
               ),
             ]
           )
