@@ -4,6 +4,7 @@ import '3.images.dart';
 import '4.layout/4.1.container.dart';
 import '4.layout/4.2.column.dart';
 import '4.layout/4.3.row.dart';
+import '4.layout/4.4.center.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -73,6 +74,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 4.3.Row'),
+            ),
+
+            // === 4.4. Center === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const CenterPage()),
+                );
+              },
+              child: const Text('Go to 4.4.Center'),
             ),
           ],
         ),
