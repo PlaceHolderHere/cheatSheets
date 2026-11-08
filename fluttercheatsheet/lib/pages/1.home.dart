@@ -6,6 +6,7 @@ import '4.layout/4.2.column.dart';
 import '4.layout/4.3.row.dart';
 import '4.layout/4.4.center.dart';
 import '4.layout/4.5.stack.dart';
+import '4.layout/4.6.padding.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -97,6 +98,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 4.5.Stack'),
+            ),
+
+            // === 4.6. Padding === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PaddingPage()),
+                );
+              },
+              child: const Text('Go to 4.6.Padding'),
             ),
           ],
         ),
