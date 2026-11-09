@@ -7,6 +7,7 @@ import '4.layout/4.3.row.dart';
 import '4.layout/4.4.center.dart';
 import '4.layout/4.5.stack.dart';
 import '4.layout/4.6.padding.dart';
+import '5.icons.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -109,6 +110,18 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 4.6.Padding'),
+            ),
+
+
+            // === 5. Icons === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const IconsPage()),
+                );
+              },
+              child: const Text('Go to 5. Icons'),
             ),
           ],
         ),
