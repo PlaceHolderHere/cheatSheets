@@ -8,6 +8,7 @@ import '4.layout/4.4.center.dart';
 import '4.layout/4.5.stack.dart';
 import '4.layout/4.6.padding.dart';
 import '5.icons.dart';
+import '6.listTile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -123,6 +124,17 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Go to 5. Icons'),
             ),
+
+            // === 6. ListTile === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ListTilePage()),
+                );
+              },
+              child: const Text('Go to 6. ListTile'),
+            )
           ],
         ),
       ),
