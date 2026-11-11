@@ -9,6 +9,7 @@ import '4.layout/4.5.stack.dart';
 import '4.layout/4.6.padding.dart';
 import '5.icons.dart';
 import '6.listTile.dart';
+import '7.wrap.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -134,7 +135,19 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 6. ListTile'),
-            )
+            ),
+          
+            // === 7. Wrap === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const WrapPage()),
+                );
+              },
+              child: const Text('Go to 7. Wrap'),
+            ),
+            
           ],
         ),
       ),
