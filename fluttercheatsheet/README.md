@@ -26,3 +26,7 @@ A new addition to the cheatsheet collection for flutter basics. Important comman
     4.2. Go to pubspec.yaml > assets
     4.3. Uncomment assets, and list the relative path to your image (indentation is important)
     4.4. use the AssetImage() attribute of the Image() class
+5. GoogleFonts - to be able to use GoogleFonts, you have to add it as a dependency in pubspec.yaml
+    - pubspec.yaml > dependencies:
+    - add: google_fonts: ^x.x.x
+        - pick a version number
