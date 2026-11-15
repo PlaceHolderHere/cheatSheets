@@ -11,6 +11,7 @@ import '5.icons.dart';
 import '6.listTile.dart';
 import '7.wrap.dart';
 import '8.navigationBar.dart';
+import '9.drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -158,6 +159,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 8. Navigation Bar'),
+            ),
+
+            // === 9. Drawer === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DrawerPage()),
+                );
+              },
+              child: const Text('Go to 9. Drawer'),
             ),
             
           ],
