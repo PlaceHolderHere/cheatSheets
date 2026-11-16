@@ -12,6 +12,7 @@ import '6.listTile.dart';
 import '7.wrap.dart';
 import '8.navigationBar.dart';
 import '9.drawer.dart';
+import '10.safeArea.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -170,6 +171,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to 9. Drawer'),
+            ),
+
+            // === 10. SafeArea === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SafeAreaPage()),
+                );
+              },
+              child: const Text('Go to 10. SafeArea'),
             ),
             
           ],
