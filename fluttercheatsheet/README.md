@@ -15,6 +15,9 @@ A new addition to the cheatsheet collection for flutter basics. Important comman
     4.1. flutter run -d [device] - runs flutter with a specific device
 5. flutter emulators - lists available device emulators
     5.1. flutter emulators --launch [emulator_id] - runs the flutter app on the emulator
+6. flutter pub - helps manage packages
+    6.1. flutter pub get -> updates packages based on dependency constraints
+    6.2. flutter pub outdated -> checks for packages that have newer versions than the ones listed in dependency constraints
 
 # Notes
 1. runApp() - starts the app
