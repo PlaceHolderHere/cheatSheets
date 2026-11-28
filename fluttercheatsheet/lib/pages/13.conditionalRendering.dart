@@ -5,12 +5,7 @@ class ConditionalPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, // Removes the debug banner
-      
-      // Widgets are stored here in the "Widget Tree"
-      home: StatefulWidgetPage(),
-    );
+    return StatefulWidgetPage();
   }
 }
 

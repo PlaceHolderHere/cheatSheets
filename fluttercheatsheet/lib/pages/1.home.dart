@@ -15,11 +15,8 @@ import '8.navigationBar.dart';
 import '9.drawer.dart';
 import '10.safeArea.dart';
 import '11.statefulWidget.dart';
-<<<<<<< HEAD
-import '13.conditionalRendering.dart';
-=======
 import '12.1.custom-stateful-widget-page.dart';
->>>>>>> d928f32ee45a2bc2d2356cfe39329db99687743d
+import '13.conditionalRendering.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -214,28 +211,27 @@ class HomePage extends StatelessWidget {
               child: const Text('Go to 11. Stateful Widgets'),
             ),
 
-<<<<<<< HEAD
-            // === 12. Conditional Rendering === //
-=======
             // === 12. CustomStatefulWidgetPage === //
->>>>>>> d928f32ee45a2bc2d2356cfe39329db99687743d
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-<<<<<<< HEAD
-                  MaterialPageRoute(builder: (context) => const ConditionalPage()),
-                );
-              },
-              child: const Text('Go to 12. Conditional Rendering'),
-=======
                   MaterialPageRoute(builder: (context) => const CustomStatefulWidgetPage()),
                 );
               },
               child: const Text('Go to 12. Custom Stateful Widgets'),
->>>>>>> d928f32ee45a2bc2d2356cfe39329db99687743d
             ),
             
+            // === 13. Conditional Rendering === //
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ConditionalPage()),
+                );
+              },
+              child: const Text('Go to 13. Conditional Rendering'),
+            ),
           ],
         ),
       ),
